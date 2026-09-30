@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+
+<style>
+
+body {
+    background-color: #49A4BB;
+
+}
+
+h2 {
+    text-align: center;
+    color: #2F39A9
+
+    
+}
+
+#Main-Converter {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Field-Conversion-Selector,
+#Type-Conversion-Selector,
+#Input-Field,
+#Result {
+    margin-bottom: 15px;
+}
+
+select, input {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="Header">
+    <h2>Unit Conversions</h2>
+</div>
+
+<div id="Main-Converter">
+    <div id="Field-Conversion-Selector">
+    <label for="Field-Selector">Select Field:</label>
+    <select id="Field-Selector">
+        <option value="comp">Computer Conversions</option>
+        <option value="unit">Unit Conversions</option>
+        <option value="sci">Scientific Conversions</option>
+        <option value="curr">Currency Conversions</option>
+    </select>
+    </div>
+
+    <div id="Type-Conversion-Selector">
+        <label for="Type-Selector">Select Type:</label>
+        <select id="Type-Selector">
+        
+        </select>
+    </div>
+
+    <div id="Input-Field">
+        <label for="Input-Value">Enter Value:</label>
+        <input type="number" id="Input-Value" placeholder="Enter value to convert">
+    </div>
+
+    <div id="Result">
+        <h5>Result:</h5>
+        <div id="Result-Value">Enter value for a conversion:</div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
